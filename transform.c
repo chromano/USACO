@@ -57,14 +57,6 @@ pattern rotate(pattern in, int degrees) {
     return out;
 }
 
-void print_pattern(pattern p) {
-	int i;
-
-	for (i=0; i < p.n; i++)
-        printf("%s\n", p.matrix[i]);
-    printf("\n");
-}
-
 int match(pattern a, pattern b) {
     return !memcmp(a.matrix, b.matrix, MAX_SIZE * MAX_SIZE);
 }
